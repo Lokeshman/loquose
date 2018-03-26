@@ -1,0 +1,16 @@
+# Node build artifacts
+node_modules
+npm-debug.log
+/Lokesh/bin
+/Lokesh/obj
+/Lokesh/ClientApp/node_modules
+.vs
+
+# Local development
+*.env
+*.dev
+.DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
