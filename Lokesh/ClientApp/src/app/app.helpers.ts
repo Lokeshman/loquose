@@ -1,5 +1,5 @@
 /*
- * Inspinia js helpers:
+ * LOINGUYEN js helpers:
  *
  * correctHeight() - fix the height of main wrapper
  * detectBody() - detect windows size

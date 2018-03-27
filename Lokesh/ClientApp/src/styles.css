@@ -1,7 +1,7 @@
-﻿/* Import main Inspinia style */
+﻿/* Import main LOINGUYENstyle */
 /*
  *
- *   INSPINIA - Responsive Admin Theme
+ *   LOINGUYEN- Responsive Admin Theme
  *   version 2.7.1
  *
 */
@@ -43,6 +43,10 @@ h3, h4, h5 {
 
 .nav > li.active > a {
   color: #ffffff; }
+
+#side-menu > li {
+  border-top: 1px solid #37414b;
+  border-bottom: 1px solid #1f262d; }
 
 .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
   background-color: #293846;
@@ -6573,7 +6577,7 @@ body.rtls .top-navigation .footer.fixed, body.rtls.top-navigation .footer.fixed 
 
 /*
  *
- *   SKIN 1 - INSPINIA - Responsive Admin Theme
+ *   SKIN 1 - LOINGUYEN- Responsive Admin Theme
  *   NAME - Blue light
  *
 */
@@ -6677,8 +6681,8 @@ body.skin-1 {
 
 /*
  *
- *   SKIN 2 - INSPINIA - Responsive Admin Theme
- *   NAME - Inspinia Ultra
+ *   SKIN 2 - LOINGUYEN- Responsive Admin Theme
+ *   NAME - LOINGUYENUltra
  *
 */
 body.skin-2 {
@@ -6822,7 +6826,7 @@ body.skin-2 #wrapper {
 
 /*
  *
- *   SKIN 3 - INSPINIA - Responsive Admin Theme
+ *   SKIN 3 - LOINGUYEN- Responsive Admin Theme
  *   NAME - Yellow/purple
  *
 */

@@ -2,5 +2,9 @@
   {
     "outputFile": "ClientApp/src/styles.css",
     "inputFile": "ClientApp/src/styles.scss"
+  },
+  {
+    "outputFile": "ClientApp/src/app/views/appviews/starter.template.css",
+    "inputFile": "ClientApp/src/app/views/appviews/starter.template.scss"
   }
 ]

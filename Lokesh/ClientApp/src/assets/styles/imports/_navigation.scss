@@ -12,6 +12,11 @@
   color: #ffffff;
 }
 
+#side-menu > li {
+  border-top: 1px solid $nav-separator-button-top-color;
+  border-bottom: 1px solid $nav-separator-button-bottom-color;
+}
+
 .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
   background-color: darken($nav-bg, 3%);
   color: white;
