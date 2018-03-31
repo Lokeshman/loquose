@@ -1,13 +1,17 @@
 // Basic Colors
-$navy: #1ab394;       // Primary color
+$navy: #4267b2;       // Primary color
 $dark-gray: #c2c2c2;  // Default color
 $blue: #1c84c6;       // Success color
 $lazur: #23c6c8;      // Info color
 $yellow: #f8ac59;     // Warning color
 $red: #ED5565;        // Danger color
+$background-color: #29487d;
+
+//FONT NAME
+$fontname:vn-scance;
 
 // Various colors
-$text-color: #676a6c;   // Body text
+$text-color: #1d2129;   // Body text
 $gray: #f3f3f4;         // Background wrapper color
 $light-gray: #D1DADE;   // Default label, badge
 $label-badge-color: #5E5E5E;
@@ -37,8 +41,10 @@ $boxed-background: url('#{$asset-path}/shattered.png');
 $btn-border-radius: 3px;
 
 //Navigation
-$nav-bg: #2F4050;
-$nav-profile-pattern: url("#{$asset-path}/header-profile.png");
-$nav-text-color: #a7b1c2;
-$nav-separator-button-top-color: #37414b;
-$nav-separator-button-bottom-color: #1f262d;
+$nav-bg: #29487d;
+/*$nav-profile-pattern: url("#{$asset-path}/header-profile.png");*/
+$nav-profile-pattern: $background-color;
+$nav-text-color: #f3f3f4;
+$nav-static-top-color: #29487d;
+$nav-separator-button-top-color: #4267b2;
+$nav-separator-button-bottom-color: #4267b2;

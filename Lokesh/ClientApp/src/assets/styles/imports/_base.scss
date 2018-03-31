@@ -1,15 +1,14 @@
 body {
-  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #2f4050;
-  font-size: 13px;
+  font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: $background-color;
+  font-size: 12px;
   color: $text-color;
   overflow-x: hidden;
-
 }
 
 html, body {
   height: 100%;
-
+  
 }
 
 body.full-height-layout #wrapper,
