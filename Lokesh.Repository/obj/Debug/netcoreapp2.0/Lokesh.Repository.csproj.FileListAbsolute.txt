@@ -1,0 +1,6 @@
+E:\Project\Loquse\Lokesh\Lokesh.Repository\bin\Debug\netcoreapp2.0\Lokesh.Repository.deps.json
+E:\Project\Loquse\Lokesh\Lokesh.Repository\bin\Debug\netcoreapp2.0\Lokesh.Repository.dll
+E:\Project\Loquse\Lokesh\Lokesh.Repository\obj\Debug\netcoreapp2.0\Lokesh.Repository.csprojResolveAssemblyReference.cache
+E:\Project\Loquse\Lokesh\Lokesh.Repository\obj\Debug\netcoreapp2.0\Lokesh.Repository.csproj.CoreCompileInputs.cache
+E:\Project\Loquse\Lokesh\Lokesh.Repository\obj\Debug\netcoreapp2.0\Lokesh.Repository.AssemblyInfoInputs.cache
+E:\Project\Loquse\Lokesh\Lokesh.Repository\obj\Debug\netcoreapp2.0\Lokesh.Repository.AssemblyInfo.cs
