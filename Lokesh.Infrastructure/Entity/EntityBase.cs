@@ -7,7 +7,7 @@ namespace Lokesh.Infrastructure.Entity
     /// <summary>
     /// Base class for entities
     /// </summary>
-    public abstract class EntityBase
+    public abstract class EntityBase:IDisposable
     {
         #region Members
 
@@ -100,6 +100,11 @@ namespace Lokesh.Infrastructure.Entity
             else
                 return base.GetHashCode();
 
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         public static bool operator ==(EntityBase left, EntityBase right)
