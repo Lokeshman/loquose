@@ -3,23 +3,25 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using Dapper;
 namespace Lokesh.Repository
-{
+{   
     public class Product
     {
         [Key]
-        public int ProductId { get; set; }
+        public string ProductId { get; set; }
         public string Name { get; set; }
         public int Quantity { get; set; }
         public double Price { get; set; }
     }
+
     public class ProductRepository
     {
         private string connectionString;
         public ProductRepository()
         {
-            connectionString = @"Server=localhost;Database=DapperDemo;Trusted_Connection=true;";
+            connectionString = @"Server=.\SQL2008;Database=LokeshSE;Trusted_Connection=true;";
         }
 
         public IDbConnection Connection
@@ -34,10 +36,10 @@ namespace Lokesh.Repository
         {
             using (IDbConnection dbConnection = Connection)
             {
-                string sQuery = "INSERT INTO Products (Name, Quantity, Price)"
-                                + " VALUES(@Name, @Quantity, @Price)";
+                string sQuery = "INSERT INTO Products (ProductId, Name, Quantity, Price)"
+                                + " VALUES(@ProductId, @Name, @Quantity, @Price)";
                 dbConnection.Open();
-                dbConnection.Execute(sQuery, prod);
+                dbConnection.Execute(sQuery, prod);                
             }
         }
 
