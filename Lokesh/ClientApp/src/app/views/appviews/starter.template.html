@@ -1,18 +1,219 @@
-<div class="wrapper wrapper-content animated fadeInRight">
-  <div class="row quick-actions_homepage">
-    <ul class="quick-actions">
-      <li class="bg_lb"> <a href="/Cash/Receipt"> <i class="fa fa-money fa-5x"></i> <span class="label label-important">20</span> Phiếu thu tiền mặt </a> </li>
-      <li class="bg_lb"> <a href="/AccountPayable/Invoice"> <i class="fa fa-truck fa-5x"></i><span class="label label-success">101</span> Phiếu mua hàng </a> </li>
-      <li class="bg_lb"> <a href="/AccountPayable/Invoice"> <i class="fa fa-shopping-cart fa-5x"></i> Bán hàng - Phải thu</a> </li>
-      <li class="bg_lb"> <a href="/Inventory/Stock"> <i class="fa fa-fire fa-5x"></i> Hàng tồn kho</a> </li>
-      <li class="bg_lb"> <a href="/Assets/InstrumentsTools"> <i class="fa fa-home fa-5x"></i> Tài sản - CCDC</a> </li>
-      <li class="bg_lb"> <a href="/Work/Cost"> <i class="fa fa-tasks fa-5x"></i> Giá thành</a> </li>
-      <li class="bg_lb"> <a href="/HR/Cost"> <i class="fa fa-pencil fa-5x"></i>Nhân sự</a> </li>
-      <li class="bg_lb"> <a href="/Accounting/Final"> <i class="fa fa-table fa-5x"></i> Kế toán tổng hợp</a> </li>
-      <li class="bg_lb "> <a href="/LaborEmploymentAndManagement/TimeSheet"> <i class="fa fa-credit-card fa-5x"></i> Chấm công tiền lương</a> </li>
-      <li class="bg_lb span3"> <a href="/Report"> <i class="fa fa-bar-chart fa-5x"></i> Báo cáo</a> </li>
-      <li class="bg_lb"> <a href="/Openning"> <i class="fa fa-edit fa-5x"></i> Đầu kỳ</a> </li>
-      <li class="bg_lb span12"> <a href="/Systems"> <i class="fa fa-cogs fa-5x"></i> Hệ thống</a> </li>
-    </ul>
-  </div> 
+<div class="row">
+  <div class="col-md-12 col-xs-12">
+    <div class="panel panel-default bootcards-summary">      
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="#/Cash/Receipt" onclick="comp('#cashreceipt')">
+              <i class="fa fa-5x fa-dollar"></i>
+              <h4>Phiếu thu tiền mặt <span class="label label-info">431</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="/AccountPayable/Purchase" onclick="comp('#Purchase')">
+              <i class="fa fa-5x fa-shopping-cart"></i>
+              <h4>Phiếu mua hàng <span class="label label-warning">432</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="/AccountReceiable/Invoice" onclick="comp('#Invoice')">
+              <i class="fa fa-5x fa-money"></i>
+              <h4>Bán hàng - Phải thu <span class="label label-info">65</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="/Inventory/Stock" onclick="comp('#Inventory')">
+              <i class="fa fa-5x fa-check-square-o"></i>
+              <h4>Hàng tồn kho <span class="label label-warning">109</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="/Inventory/Stock" onclick="comp('#Inventory')">
+              <i class="fa fa-5x fa-home"></i>
+              <h4>Tài sản - CCDC <span class="label label-warning">109</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="#socialmedia" onclick="comp('#socialmedia')">
+              <i class="fa fa-5x fa-share-alt"></i>
+              <h4>Giá Thành<span class="label label-warning">110</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="#growth" onclick="comp('#growth')">
+              <i class="fa fa-5x fa-pencil"></i>
+              <h4>Nhân sự <span class="label label-info">110</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="#growth" onclick="comp('#growth')">
+              <i class="fa fa-5x fa-table"></i>
+              <h4>Kế toán tổng hợp<span class="label label-info">110</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="#growth" onclick="comp('#growth')">
+              <i class="fa fa-5x fa-credit-card"></i>
+              <h4>Chấm công tiền lương<span class="label label-info">110</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="#growth" onclick="comp('#growth')">
+              <i class="fa fa-5x fa-bar-chart"></i>
+              <h4>Báo cáo<span class="label label-info">110</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="#growth" onclick="comp('#growth')">
+              <i class="fa fa-5x fa-edit"></i>
+              <h4>Đầu kỳ<span class="label label-info">110</span></h4>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a class="bootcards-summary-item" href="#growth" onclick="comp('#growth')">
+              <i class="fa fa-5x fa-cogs"></i>
+              <h4>Hệ thống <span class="label label-info">110</span></h4>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default bootcards-chart cards hidden" id="finances">
+        <div class="bootcards-chart-canvas" id="financesChart"></div>
+      </div>
+      <div class="table-responsive cards hidden" id="clients">
+        <table class="table table-hover">
+          <thead>
+            <tr class="active">
+              <th>Name</th>
+              <th>Products</th>
+              <th>Paid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Johan Millner</td>
+              <td>2</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Jena Torey</td>
+              <td>3</td>
+              <td>750</td>
+            </tr>
+            <tr>
+              <td>Jesus Da Silva</td>
+              <td>7</td>
+              <td>1750</td>
+            </tr>
+            <tr>
+              <td>Robert Ramsey</td>
+              <td>1</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Ben Rosenberg</td>
+              <td>5</td>
+              <td>1250</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>18</strong></td>
+              <td><strong>4500</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-responsive cards hidden" id="files">
+        <table class="table table-hover">
+          <thead>
+            <tr class="active">
+              <th>Files</th>
+              <th>Forecast</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Estimated Earning</td>
+              <td>$1.8M</td>
+              <td>Under Norm</td>
+            </tr>
+            <tr>
+              <td>Future Plan</td>
+              <td>$12M</td>
+              <td>2016-2020</td>
+            </tr>
+            <tr>
+              <td>This Year Plan</td>
+              <td>$0.7M</td>
+              <td>Under Norm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-responsive cards hidden" id="tasks">
+        <table class="table table-hover">
+          <thead>
+            <tr class="active">
+              <th>Task</th>
+              <th>Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Expand the existing offices</td>
+              <td>On Progress</td>
+            </tr>
+            <tr>
+              <td>Start working on the new plan</td>
+              <td>To Do</td>
+            </tr>
+            <tr>
+              <td>Implement Jira</td>
+              <td>To Do</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-responsive cards hidden" id="socialmedia">
+        <table class="table table-hover">
+          <thead>
+            <tr class="active">
+              <th>Name</th>
+              <th>Nr.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Facebook</td>
+              <td>2700</td>
+            </tr>
+            <tr>
+              <td>Twitter</td>
+              <td>3300</td>
+            </tr>
+            <tr>
+              <td>Instagram</td>
+              <td>2200</td>
+            </tr>
+            <tr>
+              <td>Email Marketing</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>9200</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel panel-default bootcards-chart cards hidden" id="growth">
+        <div class="bootcards-chart-canvas" id="growthChart"></div>
+      </div>
+      <div class="panel-footer hidden">
+        <small>Sample Company</small>
+      </div>
+    </div>
+  </div>
 </div>
+

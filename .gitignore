@@ -4,6 +4,8 @@ npm-debug.log
 /Lokesh/bin
 /Lokesh/obj
 /Lokesh/ClientApp/node_modules
+/Lokesh.Infrastructure/bin
+/Lokesh.Repository/bin
 .vs
 
 # Local development
