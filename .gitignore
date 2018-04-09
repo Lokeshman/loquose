@@ -5,7 +5,11 @@ npm-debug.log
 /Lokesh/obj
 /Lokesh/ClientApp/node_modules
 /Lokesh.Infrastructure/bin
+/Lokesh.Infrastructure/obj
 /Lokesh.Repository/bin
+/Lokesh.Repository/obj
+/XUnitTestDAL/bin
+/XUnitTestDAL/obj
 .vs
 
 # Local development
