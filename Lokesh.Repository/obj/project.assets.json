@@ -1939,7 +1939,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Welcome\\.nuget\\packages\\": {},
+    "C:\\Users\\Lokesh\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -1949,18 +1949,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\projectZala\\Loquse\\Lokesh.Repository\\Lokesh.Repository.csproj",
+      "projectUniqueName": "E:\\Project\\Loquse\\Lokesh\\Lokesh.Repository\\Lokesh.Repository.csproj",
       "projectName": "Lokesh.Repository",
-      "projectPath": "D:\\projectZala\\Loquse\\Lokesh.Repository\\Lokesh.Repository.csproj",
-      "packagesPath": "C:\\Users\\Welcome\\.nuget\\packages\\",
-      "outputPath": "D:\\projectZala\\Loquse\\Lokesh.Repository\\obj\\",
+      "projectPath": "E:\\Project\\Loquse\\Lokesh\\Lokesh.Repository\\Lokesh.Repository.csproj",
+      "packagesPath": "C:\\Users\\Lokesh\\.nuget\\packages\\",
+      "outputPath": "E:\\Project\\Loquse\\Lokesh\\Lokesh.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lokesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -1969,14 +1969,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Welcome\\.dotnet\\NuGetFallbackFolder": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\projectZala\\Loquse\\Lokesh.Infrastructure\\Lokesh.Infrastructure.csproj": {
-              "projectPath": "D:\\projectZala\\Loquse\\Lokesh.Infrastructure\\Lokesh.Infrastructure.csproj"
+            "E:\\Project\\Loquse\\Lokesh\\Lokesh.Infrastructure\\Lokesh.Infrastructure.csproj": {
+              "projectPath": "E:\\Project\\Loquse\\Lokesh\\Lokesh.Infrastructure\\Lokesh.Infrastructure.csproj"
             }
           }
         }
