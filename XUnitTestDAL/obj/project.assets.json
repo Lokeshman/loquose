@@ -6270,7 +6270,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lokesh\\.nuget\\packages\\": {},
+    "C:\\Users\\Welcome\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -6280,18 +6280,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Project\\Loquse\\Lokesh\\XUnitTestDAL\\XUnitTestDAL.csproj",
+      "projectUniqueName": "D:\\projectZala\\Loquse\\XUnitTestDAL\\XUnitTestDAL.csproj",
       "projectName": "XUnitTestDAL",
-      "projectPath": "E:\\Project\\Loquse\\Lokesh\\XUnitTestDAL\\XUnitTestDAL.csproj",
-      "packagesPath": "C:\\Users\\Lokesh\\.nuget\\packages\\",
-      "outputPath": "E:\\Project\\Loquse\\Lokesh\\XUnitTestDAL\\obj\\",
+      "projectPath": "D:\\projectZala\\Loquse\\XUnitTestDAL\\XUnitTestDAL.csproj",
+      "packagesPath": "C:\\Users\\Welcome\\.nuget\\packages\\",
+      "outputPath": "D:\\projectZala\\Loquse\\XUnitTestDAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lokesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -6300,13 +6300,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Welcome\\.dotnet\\NuGetFallbackFolder": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\Project\\Loquse\\Lokesh\\Lokesh.Repository\\Lokesh.Repository.csproj": {
-              "projectPath": "E:\\Project\\Loquse\\Lokesh\\Lokesh.Repository\\Lokesh.Repository.csproj"
+            "D:\\projectZala\\Loquse\\Lokesh.Repository\\Lokesh.Repository.csproj": {
+              "projectPath": "D:\\projectZala\\Loquse\\Lokesh.Repository\\Lokesh.Repository.csproj"
             }
           }
         }

@@ -1,21 +1,15 @@
-﻿using Lokesh.Infrastructure.Entity;
-using Lokesh.Infrastructure.Repository;
-using Lokesh.Infrastructure.UnitOfWork;
+﻿using Dapper;
+using Lokesh.Infrastructure.Entity;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using Dapper;
 using System.Linq.Expressions;
-using Lokesh.Repository.Initializer;
-using Lokesh.Repository.UnitOfWork;
+using System.Text;
 
-namespace Lokesh.Repository
+namespace Lokesh.Repository.Initializer
 {
-    public abstract class RepositoryDapper<T> : RepositoryBase<T> where T : EntityBase, IAggregateRoot
+    public abstract class DapperContext<T>: IAggregateRoot where T : EntityBase
     {
         private readonly string _tableName;
 
@@ -31,9 +25,14 @@ namespace Lokesh.Repository
         }
 
 
-        public RepositoryDapper(string tableName, IDPUnitOfWork unitOfWork) : base(unitOfWork)
+        public DapperContext(string tableName)
         {
             _tableName = tableName;
+        }
+        public DapperContext(string tableName, IDbTransaction transaction)
+        {
+            _tableName = tableName;
+            Transaction = transaction;
         }
 
         internal virtual dynamic Mapping(T item)
@@ -41,7 +40,7 @@ namespace Lokesh.Repository
             return item;
         }
 
-        public override void Add(T item)
+        public virtual void Add(T item)
         {
             using (IDbConnection cn = Connection)
             {
@@ -61,7 +60,7 @@ namespace Lokesh.Repository
             }
         }
 
-        public override void Remove(T item)
+        public virtual void Remove(T item)
         {
             using (IDbConnection cn = Connection)
             {
@@ -99,7 +98,7 @@ namespace Lokesh.Repository
             return items;
         }
 
-        public override IEnumerable<T> FindAll()
+        public virtual IEnumerable<T> FindAll()
         {
             IEnumerable<T> items = null;
 
@@ -114,4 +113,17 @@ namespace Lokesh.Repository
 
     }
 
+    public static class DapperExtensions
+    {
+        public static T Insert<T>(this IDbConnection cnn, string tableName, dynamic param)
+        {
+            IEnumerable<T> result = SqlMapper.Query<T>(cnn, DynamicQuery.GetInsertQuery(tableName, param), param);
+            return result.First();
+        }
+
+        public static void Update(this IDbConnection cnn, string tableName, dynamic param)
+        {
+            SqlMapper.Execute(cnn, DynamicQuery.GetUpdateQuery(tableName, param), param);
+        }
+    }
 }

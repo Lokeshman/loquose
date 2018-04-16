@@ -7,7 +7,7 @@ namespace Lokesh.Infrastructure.Entity
     /// <summary>
     /// Base class for entities
     /// </summary>
-    public abstract class EntityBase:IDisposable
+    public abstract class EntityBase : IDisposable
     {
         #region Members
 
@@ -34,6 +34,8 @@ namespace Lokesh.Infrastructure.Entity
                 OnIdChanged();
             }
         }
+
+        public abstract string _tableName { get; }
 
         #endregion
 

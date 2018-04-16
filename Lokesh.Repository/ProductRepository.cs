@@ -5,15 +5,19 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using Dapper;
+using Lokesh.Infrastructure.Entity;
+
 namespace Lokesh.Repository
-{   
-    public class Product
+{
+    public class Product : EntityBase, IAggregateRoot
     {
         [Key]
         public string ProductId { get; set; }
         public string Name { get; set; }
         public int Quantity { get; set; }
         public double Price { get; set; }
+
+        public override string _tableName { get => "Products"; }
     }
 
     public class ProductRepository
@@ -21,7 +25,7 @@ namespace Lokesh.Repository
         private string connectionString;
         public ProductRepository()
         {
-            connectionString = @"Server=.\SQL2008;Database=LokeshSE;Trusted_Connection=true;";
+            connectionString = @"Server=LOINGUYEN-SMOOV;Database=Equinox;Trusted_Connection=true;";
         }
 
         public IDbConnection Connection
@@ -39,7 +43,7 @@ namespace Lokesh.Repository
                 string sQuery = "INSERT INTO Products (ProductId, Name, Quantity, Price)"
                                 + " VALUES(@ProductId, @Name, @Quantity, @Price)";
                 dbConnection.Open();
-                dbConnection.Execute(sQuery, prod);                
+                dbConnection.Execute(sQuery, prod);
             }
         }
 

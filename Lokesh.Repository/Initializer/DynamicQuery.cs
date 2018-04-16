@@ -24,12 +24,13 @@ namespace Lokesh.Repository.Initializer
         public static string GetInsertQuery(string tableName, dynamic item)
         {
             PropertyInfo[] props = item.GetType().GetProperties();
-            string[] columns = props.Select(p => p.Name).Where(s => s != "ID").ToArray();
+            string[] columns = props.Select(p => p.Name).Where(s => s.ToUpper() != "ID" && !s.Equals("_tableName")).ToArray();
 
-            return string.Format("INSERT INTO {0} ({1}) OUTPUT inserted.ID VALUES (@{2})",
+            var SqlExe = string.Format("INSERT INTO {0} ({1}) OUTPUT inserted.ProductId VALUES (@{2})",
                                  tableName,
                                  string.Join(",", columns),
                                  string.Join(",@", columns));
+            return SqlExe;
         }
 
         /// <summary>
